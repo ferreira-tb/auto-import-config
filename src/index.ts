@@ -88,6 +88,7 @@ function config(options: ConfigOptions = {}) {
       {
         from: 'vue',
         imports: [
+          'CSSProperties',
           'Component',
           'ComponentInstance',
           'MaybeRefOrGetter',
