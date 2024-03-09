@@ -1,0 +1,102 @@
+export interface ConfigOptions {
+  dts?: string;
+  injectAtEnd?: boolean;
+  include?: RegExp[];
+  vueImports?: string[];
+  imports?: any[];
+}
+
+function config(options: ConfigOptions = {}) {
+  return {
+    dts: options.dts ?? './auto-imports.d.ts',
+    injectAtEnd: options.injectAtEnd ?? true,
+    include: [/\.vue$/, ...(options.include ?? [])],
+    imports: [
+      {
+        vue: [
+          'computed',
+          'customRef',
+          'defineComponent',
+          'effectScope',
+          'h',
+          'hasInjectionContext',
+          'inject',
+          'isRef',
+          'markRaw',
+          'nextTick',
+          'onActivated',
+          'onBeforeMount',
+          'onBeforeUnmount',
+          'onBeforeUpdate',
+          'onDeactivated',
+          'onMounted',
+          'onScopeDispose',
+          'onUnmounted',
+          'provide',
+          'readonly',
+          'ref',
+          'shallowReactive',
+          'shallowRef',
+          'reactive',
+          'toRaw',
+          'toRef',
+          'toValue',
+          'triggerRef',
+          'unref',
+          'watch',
+          'watchEffect',
+          'watchPostEffect',
+          'watchSyncEffect',
+          ...(options.vueImports ?? [])
+        ],
+        '@vueuse/core': [
+          'computedAsync',
+          'computedInject',
+          'computedWithControl',
+          'tryOnBeforeMount',
+          'tryOnBeforeUnmount',
+          'tryOnMounted',
+          'tryOnScopeDispose',
+          'tryOnUnmounted',
+          'useAsyncState',
+          'useIntersectionObserver',
+          'useLocalStorage',
+          'useMutationObserver',
+          'useResizeObserver',
+          'useSessionStorage',
+          'useStorage',
+          'watchAtMost',
+          'watchDeep',
+          'watchIgnorable',
+          'watchImmediate',
+          'watchOnce',
+          'watchPausable',
+          'watchTriggerable',
+          'whenever'
+        ]
+      },
+      {
+        from: 'vue',
+        imports: [
+          'Component',
+          'ComponentInstance',
+          'MaybeRefOrGetter',
+          'Ref',
+          'ShallowRef',
+          'VNode',
+          'VNodeProps'
+        ],
+        type: true
+      },
+      {
+        from: '@tb-dev/utility-types',
+        imports: ['MaybeArray', 'MaybePromise', 'Nullish', 'PartialNullish'],
+        type: true
+      },
+
+      ...(options.imports ?? [])
+    ]
+  };
+}
+
+export default config;
