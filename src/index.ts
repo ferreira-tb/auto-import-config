@@ -76,7 +76,7 @@ function config(options: ConfigOptions = {}) {
           'watchTriggerable',
           'whenever',
 
-          ...(options.manatsu ? ['useElementSize'] : [])
+          ...(options.manatsu ? [] : ['useElementSize'])
         ],
         manatsu: options.manatsu ? ['useElementSize'] : []
       },
