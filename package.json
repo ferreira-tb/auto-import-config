@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/auto-import-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Config for unplugin-auto-import",
   "license": "MIT",
   "type": "module",
@@ -40,6 +40,7 @@
   },
   "peerDependencies": {
     "vue": "^3.4.21",
+    "unplugin-auto-import": "^0.17.5",
     "@tb-dev/utility-types": "^1.2.0"
   },
   "engines": {
