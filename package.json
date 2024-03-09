@@ -43,7 +43,9 @@
     "unplugin-auto-import": "^0.17.5",
     "@tb-dev/utility-types": "^1.2.0",
     "vue-router": "^4.3.0",
-    "@vueuse/core": "^10.9.0"
+    "@vueuse/core": "^10.9.0",
+    "manatsu": "^0.4.32",
+    "@manatsu/style": "^0.4.32"
   },
   "engines": {
     "node": ">=20"
