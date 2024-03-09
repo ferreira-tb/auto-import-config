@@ -11,7 +11,7 @@ function config(options: ConfigOptions = {}) {
   return {
     dts: options.dts ?? './types/auto-imports.d.ts',
     injectAtEnd: options.injectAtEnd ?? true,
-    include: [/\.vue$/, ...(options.include ?? [])],
+    include: [/\.[cm]?[jt]s$/, /\.vue$/, ...(options.include ?? [])],
     imports: [
       {
         vue: [
