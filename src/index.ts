@@ -9,7 +9,7 @@ export interface ConfigOptions {
 
 function config(options: ConfigOptions = {}) {
   return {
-    dts: options.dts ?? './auto-imports.d.ts',
+    dts: options.dts ?? './types/auto-imports.d.ts',
     injectAtEnd: options.injectAtEnd ?? true,
     include: [/\.vue$/, ...(options.include ?? [])],
     imports: [
