@@ -49,6 +49,7 @@ function config(options: ConfigOptions = {}) {
           'watchSyncEffect',
           ...(options.vueImports ?? [])
         ],
+        'vue-router': ['useRoute', 'useRouter'],
         '@vueuse/core': [
           'computedAsync',
           'computedInject',
