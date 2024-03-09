@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/auto-import-config",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Config for unplugin-auto-import",
   "license": "MIT",
   "type": "module",
@@ -44,8 +44,8 @@
     "@tb-dev/utility-types": "^1.2.0",
     "vue-router": "^4.3.0",
     "@vueuse/core": "^10.9.0",
-    "manatsu": "^0.4.32",
-    "@manatsu/style": "^0.4.32"
+    "manatsu": "^0.5.0",
+    "@manatsu/style": "^0.5.0"
   },
   "engines": {
     "node": ">=20"
