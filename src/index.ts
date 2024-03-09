@@ -50,7 +50,10 @@ function config(options: ConfigOptions = {}) {
           'watchSyncEffect',
           ...(options.vueImports ?? [])
         ],
+
         'vue-router': ['useRoute', 'useRouter'],
+        pinia: ['getActivePinia', 'storeToRefs'],
+
         '@vueuse/core': [
           'computedAsync',
           'computedInject',
@@ -78,6 +81,7 @@ function config(options: ConfigOptions = {}) {
 
           ...(options.manatsu ? [] : ['useElementSize'])
         ],
+
         manatsu: options.manatsu ? ['useElementSize'] : [],
         '@manatsu/style': options.manatsu ? ['css', 'tw'] : []
       },
