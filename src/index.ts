@@ -78,7 +78,8 @@ function config(options: ConfigOptions = {}) {
 
           ...(options.manatsu ? [] : ['useElementSize'])
         ],
-        manatsu: options.manatsu ? ['useElementSize'] : []
+        manatsu: options.manatsu ? ['useElementSize'] : [],
+        '@manatsu/style': options.manatsu ? ['css', 'tw'] : []
       },
       {
         from: 'vue',
