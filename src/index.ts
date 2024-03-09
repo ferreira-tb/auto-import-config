@@ -84,8 +84,7 @@ function config(options: ConfigOptions = {}) {
           'MaybeRefOrGetter',
           'Ref',
           'ShallowRef',
-          'VNode',
-          'VNodeProps'
+          'VNode'
         ],
         type: true
       },
