@@ -1,9 +1,10 @@
 export interface ConfigOptions {
   dts?: string;
-  injectAtEnd?: boolean;
   include?: RegExp[];
-  vueImports?: string[];
+  injectAtEnd?: boolean;
   imports?: any[];
+  manatsu?: boolean;
+  vueImports?: string[];
 }
 
 function config(options: ConfigOptions = {}) {
@@ -73,8 +74,11 @@ function config(options: ConfigOptions = {}) {
           'watchOnce',
           'watchPausable',
           'watchTriggerable',
-          'whenever'
-        ]
+          'whenever',
+
+          ...(options.manatsu ? ['useElementSize'] : [])
+        ],
+        manatsu: options.manatsu ? ['useElementSize'] : []
       },
       {
         from: 'vue',
