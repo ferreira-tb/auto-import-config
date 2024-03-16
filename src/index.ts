@@ -12,6 +12,8 @@ export interface ConfigOptions {
     pinia?: boolean;
     /** @default true */
     router?: boolean;
+    /** @default false */
+    tauri?: boolean;
     /** @default true */
     utilityTypes?: boolean;
     /** @default true */
@@ -39,6 +41,7 @@ function config(options: ConfigOptions = {}) {
     manatsuStyle = false,
     pinia = true,
     router = true,
+    tauri = false,
     utilityTypes = true,
     utils = true,
     vue = true,
@@ -63,6 +66,10 @@ function config(options: ConfigOptions = {}) {
 
   if (router) {
     imports['vue-router'] = ['useRoute', 'useRouter'];
+  }
+
+  if (tauri) {
+    imports['@tauri-apps/api/tauri'] = ['invoke'];
   }
 
   if (utils) {
