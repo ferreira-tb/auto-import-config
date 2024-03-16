@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/auto-import-config",
-  "version": "1.0.12",
+  "version": "1.1.0",
   "description": "Config for unplugin-auto-import",
   "license": "MIT",
   "type": "module",
@@ -27,7 +27,7 @@
     "type-check": "tsc --noEmit"
   },
   "devDependencies": {
-    "@types/node": "^20.11.26",
+    "@types/node": "^20.11.28",
     "eslint": "^8.57.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
@@ -41,11 +41,14 @@
   "peerDependencies": {
     "vue": "^3.4.21",
     "unplugin-auto-import": "^0.17.5",
-    "@tb-dev/utility-types": "^1.2.0",
+    "@tb-dev/utils": "^1.3.1",
+    "@tb-dev/utility-types": "^1.2.1",
     "vue-router": "^4.3.0",
     "@vueuse/core": "^10.9.0",
-    "manatsu": "^0.5.0",
-    "@manatsu/style": "^0.5.0",
+    "@vueuse/router": "^10.9.0",
+    "@vueuse/math": "^10.9.0",
+    "manatsu": "^0.5.2",
+    "@manatsu/style": "^0.5.2",
     "pinia": "^2.1.7"
   },
   "engines": {
