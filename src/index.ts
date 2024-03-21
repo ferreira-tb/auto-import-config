@@ -76,7 +76,7 @@ function config(options: ConfigOptions = {}) {
   }
 
   if (tauri) {
-    imports['@tauri-apps/api/tauri'] = ['convertFileSrc', 'invoke'];
+    imports['@tauri-apps/api/core'] = ['convertFileSrc', 'invoke'];
   }
 
   if (utils) {
