@@ -53,7 +53,7 @@ function config(options: ConfigOptions = {}) {
   const imports: Record<string, string[]> = {};
 
   if (manatsu) {
-    imports.manatsu = ['symbols', 'useElementSize'];
+    imports.manatsu = ['injectStrict', 'symbols', 'useElementSize'];
   }
 
   if (manatsuStyle) {
