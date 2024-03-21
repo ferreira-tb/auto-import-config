@@ -149,6 +149,7 @@ function config(options: ConfigOptions = {}) {
       'useArraySome',
       'useArrayUnique',
       'useAsyncState',
+      'useCycleList',
       'useCurrentElement',
       'useDraggable',
       'useElementBounding',
