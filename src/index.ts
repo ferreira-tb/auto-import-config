@@ -65,7 +65,14 @@ function config(options: ConfigOptions = {}) {
   }
 
   if (router) {
-    imports['vue-router'] = ['onBeforeRouteLeave', 'onBeforeRouteUpdate', 'useRoute', 'useRouter'];
+    imports['vue-router'] = [
+      'isNavigationFailure',
+      'NavigationFailureType',
+      'onBeforeRouteLeave',
+      'onBeforeRouteUpdate',
+      'useRoute',
+      'useRouter'
+    ];
   }
 
   if (tauri) {
