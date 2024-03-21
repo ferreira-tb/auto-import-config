@@ -65,7 +65,7 @@ function config(options: ConfigOptions = {}) {
   }
 
   if (router) {
-    imports['vue-router'] = ['useRoute', 'useRouter'];
+    imports['vue-router'] = ['onBeforeRouteLeave', 'onBeforeRouteUpdate', 'useRoute', 'useRouter'];
   }
 
   if (tauri) {
