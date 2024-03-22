@@ -48,8 +48,8 @@
     "@vueuse/core": "^10.9.0",
     "@vueuse/router": "^10.9.0",
     "@vueuse/math": "^10.9.0",
-    "manatsu": "^0.5.14",
-    "@manatsu/style": "^0.5.14",
+    "manatsu": "^0.6.0",
+    "@manatsu/style": "^0.6.0",
     "pinia": "^2.1.7"
   },
   "engines": {
