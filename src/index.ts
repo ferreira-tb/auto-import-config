@@ -3,6 +3,7 @@ export interface ConfigOptions {
   include?: RegExp[];
   injectAtEnd?: boolean;
   imports?: any[];
+  excludeImports?: (string | RegExp)[];
   presets?: {
     /** @default false */
     manatsu?: boolean;
@@ -256,8 +257,28 @@ function config(options: ConfigOptions = {}) {
     dts: options.dts ?? './types/auto-imports.d.ts',
     injectAtEnd: options.injectAtEnd ?? true,
     include: [/\.[cm]?[jt]s$/, /\.vue$/, ...(options.include ?? [])],
-    imports: [imports, ...typeImports, ...(options.imports ?? [])]
+    imports: [
+      filterImports(imports, options.excludeImports ?? []),
+      ...typeImports,
+      ...(options.imports ?? [])
+    ]
   };
 }
 
 export default config;
+
+function filterImports(
+  imports: Record<string, string[]>,
+  exclude: (string | RegExp)[]
+): Record<string, string[]> {
+  const predicate = (value: string): boolean => {
+    return !exclude.some((pattern) => {
+      if (typeof pattern === 'string') return value === pattern;
+      return pattern.test(value);
+    });
+  };
+
+  return Object.fromEntries(
+    Object.entries(imports).map(([key, values]) => [key, values.filter(predicate)])
+  );
+}
