@@ -53,7 +53,16 @@ function config(options: ConfigOptions = {}) {
   const imports: Record<string, string[]> = {};
 
   if (manatsu) {
-    imports.manatsu = ['injectStrict', 'symbols', 'useElementSize'];
+    imports.manatsu = [
+      'handleError',
+      'injectStrict',
+      'onKeyDown',
+      'onKeyPressed',
+      'onKeyStroke',
+      'onKeyUp',
+      'symbols',
+      'useElementSize'
+    ];
   }
 
   if (manatsuStyle) {
@@ -128,10 +137,6 @@ function config(options: ConfigOptions = {}) {
       'computedWithControl',
       'extendRef',
       'onClickOutside',
-      'onKeyDown',
-      'onKeyPressed',
-      'onKeyStroke',
-      'onKeyUp',
       'tryOnBeforeMount',
       'tryOnBeforeUnmount',
       'tryOnMounted',
@@ -191,7 +196,13 @@ function config(options: ConfigOptions = {}) {
     ];
 
     if (!manatsu) {
-      imports['@vueuse/core'].push('useElementSize');
+      imports['@vueuse/core'].push(
+        'onKeyDown',
+        'onKeyPressed',
+        'onKeyStroke',
+        'onKeyUp',
+        'useElementSize'
+      );
     }
   }
 
