@@ -99,6 +99,7 @@ function config(options: ConfigOptions = {}) {
 
   if (tauri) {
     imports['@tauri-apps/api/core'] = ['convertFileSrc', 'invoke'];
+    imports['@tauri-apps/api/event'] = ['listen'];
   }
 
   if (utils) {
