@@ -73,7 +73,8 @@ function config(options: ConfigOptions = {}) {
       'onKeyUp',
       'symbols',
       'useDialog',
-      'useElementSize'
+      'useElementSize',
+      'useInvoke'
     ];
   }
 
