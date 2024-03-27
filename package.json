@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/auto-import-config",
-  "version": "1.2.14",
+  "version": "1.2.15",
   "description": "Config for unplugin-auto-import",
   "license": "MIT",
   "type": "module",
@@ -36,20 +36,20 @@
     "typescript": "^5.4.3",
     "unplugin-auto-import": "^0.17.5",
     "vite": "^5.2.6",
-    "vite-plugin-dts": "^3.7.3"
+    "vite-plugin-dts": "^3.8.0"
   },
   "peerDependencies": {
     "vue": "^3.4.21",
     "unplugin-auto-import": "^0.17.5",
-    "@tb-dev/utils": "^1.3.4",
+    "@tb-dev/utils": "^1.4.2",
     "@tb-dev/utility-types": "^1.2.4",
     "@tauri-apps/api": "^2.0.0-beta.6",
     "vue-router": "^4.3.0",
     "@vueuse/core": "^10.9.0",
     "@vueuse/router": "^10.9.0",
     "@vueuse/math": "^10.9.0",
-    "manatsu": "^0.6.10",
-    "@manatsu/style": "^0.6.10",
+    "manatsu": "^0.6.19",
+    "@manatsu/style": "^0.6.19",
     "pinia": "^2.1.7"
   },
   "engines": {
