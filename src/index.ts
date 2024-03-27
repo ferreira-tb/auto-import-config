@@ -257,6 +257,8 @@ function config(options: ConfigOptions = {}) {
         'CSSProperties',
         'Component',
         'ComponentInstance',
+        'ComputedRef',
+        'InjectionKey',
         'MaybeRefOrGetter',
         'Ref',
         'ShallowRef',
