@@ -242,6 +242,21 @@ function config(options: ConfigOptions = {}) {
 
   const typeImports: TypeImport[] = [];
 
+  if (manatsu) {
+    typeImports.push({
+      from: 'manatsu',
+      imports: [
+        'ComputedSymbol',
+        'MaybeNullishRef',
+        'RefSymbol',
+        'ShallowRefSymbol',
+        'WritableRefSymbol',
+        'WritableShallowRefSymbol'
+      ],
+      type: true
+    });
+  }
+
   if (utilityTypes) {
     typeImports.push({
       from: '@tb-dev/utility-types',
