@@ -41,15 +41,15 @@
   "peerDependencies": {
     "vue": "^3.4.21",
     "unplugin-auto-import": "^0.17.5",
-    "@tb-dev/utils": "^1.4.2",
+    "@tb-dev/utils": "^1.4.3",
     "@tb-dev/utility-types": "^1.2.4",
     "@tauri-apps/api": "^2.0.0-beta.6",
     "vue-router": "^4.3.0",
     "@vueuse/core": "^10.9.0",
     "@vueuse/router": "^10.9.0",
     "@vueuse/math": "^10.9.0",
-    "manatsu": "^0.6.20",
-    "@manatsu/style": "^0.6.20",
+    "manatsu": "^0.7.0",
+    "@manatsu/style": "^0.7.0",
     "pinia": "^2.1.7"
   },
   "engines": {
