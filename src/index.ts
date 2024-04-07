@@ -7,8 +7,6 @@ export interface ConfigOptions {
   presets?: {
     /** @default false */
     manatsu?: boolean;
-    /** @default false */
-    manatsuStyle?: boolean;
     /** @default true */
     pinia?: boolean;
     /** @default true */
@@ -39,7 +37,6 @@ interface TypeImport {
 function config(options: ConfigOptions = {}) {
   const {
     manatsu = false,
-    manatsuStyle = false,
     pinia = true,
     router = true,
     tauri = false,
@@ -71,15 +68,9 @@ function config(options: ConfigOptions = {}) {
       'onKeyPressed',
       'onKeyStroke',
       'onKeyUp',
-      'symbols',
-      'useDialog',
       'useElementSize',
       'useInvoke'
     ];
-  }
-
-  if (manatsuStyle) {
-    imports['@manatsu/style'] = ['css', 'tw'];
   }
 
   if (pinia) {
