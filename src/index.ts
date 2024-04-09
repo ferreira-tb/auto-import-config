@@ -52,6 +52,7 @@ function config(options: ConfigOptions = {}) {
 
   if (manatsu) {
     imports.manatsu = [
+      'defineEmptyComponent',
       'getCurrentApp',
       'getRouter',
       'handleError',
@@ -60,16 +61,24 @@ function config(options: ConfigOptions = {}) {
       'invokeOnKeyPressed',
       'invokeOnKeyStroke',
       'invokeOnKeyUp',
+      'isDev',
       'navigateOnKeyDown',
       'navigateOnKeyPressed',
       'navigateOnKeyStroke',
       'navigateOnKeyUp',
+      'onContextMenu',
       'onKeyDown',
       'onKeyPressed',
       'onKeyStroke',
       'onKeyUp',
+      'preventContextMenu',
+      'preventKeyDown',
+      'preventKeyPressed',
+      'preventKeyStroke',
+      'preventKeyUp',
       'useElementSize',
-      'useInvoke'
+      'useInvoke',
+      'useListen'
     ];
   }
 
