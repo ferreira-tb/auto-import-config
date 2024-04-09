@@ -80,7 +80,6 @@ function config(options: ConfigOptions = {}) {
   if (router) {
     imports['vue-router'] = [
       'isNavigationFailure',
-      'NavigationFailureType',
       'onBeforeRouteLeave',
       'onBeforeRouteUpdate',
       'useRoute',
