@@ -102,7 +102,16 @@ function config(options: ConfigOptions = {}) {
   }
 
   if (utils) {
-    imports['@tb-dev/utils'] = ['isNullish', 'noop', 'toArray', 'toPixel'];
+    imports['@tb-dev/utils'] = [
+      'isNullish',
+      'noop',
+      'panic',
+      'toArray',
+      'todo',
+      'toPixel',
+      'unimplemented',
+      'unreachable'
+    ];
   }
 
   if (vue) {
