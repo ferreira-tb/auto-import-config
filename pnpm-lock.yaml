@@ -40,8 +40,8 @@ importers:
         version: 4.3.2(vue@3.4.26(typescript@5.4.5))
     devDependencies:
       '@tb-dev/eslint-config':
-        specifier: ^3.4.2
-        version: 3.4.2(eslint@8.57.0)(typescript@5.4.5)
+        specifier: ^3.4.3
+        version: 3.4.3(eslint@8.57.0)(typescript@5.4.5)
       '@types/node':
         specifier: ^20.12.8
         version: 20.12.8
@@ -88,10 +88,6 @@ packages:
 
   '@babel/helper-string-parser@7.24.1':
     resolution: {integrity: sha512-2ofRCjnnA9y+wk8b9IAREroeUP02KHp431N2mhKniy2yKIDKpbrHv9eXwm8cBeWQYcJmzv5qKCu65P47eCF7CQ==}
-    engines: {node: '>=6.9.0'}
-
-  '@babel/helper-validator-identifier@7.22.20':
-    resolution: {integrity: sha512-Y4OZ+ytlatR8AI+8KZfKuL5urKp7qey08ha31L8b3BwewJAoJamTzyvxPR/5D+KkdJCGPq/+8TukHBlY10FX9A==}
     engines: {node: '>=6.9.0'}
 
   '@babel/helper-validator-identifier@7.24.5':
@@ -453,8 +449,8 @@ packages:
     resolution: {integrity: sha512-wJRY+fBUm3KpqZDHMIz5HRv+1vlnvRJ/dFxiyY3NlINTx2qXqDou5qWYcP1CuZXsd39InWVPV3FAZvno/kGCkA==}
     engines: {node: '>= 18', npm: '>= 6.6.0', yarn: '>= 1.19.1'}
 
-  '@tb-dev/eslint-config@3.4.2':
-    resolution: {integrity: sha512-bI7HmfpOmPB2dBpO5/kjJd2fff3ysI5oSMwiE3PVJjjE9VjHQ8gEypZDTEHAKt9duuccZAc17Aqb7BAjbPlSVg==}
+  '@tb-dev/eslint-config@3.4.3':
+    resolution: {integrity: sha512-YlxnzGco8vIlhLoLtFNnJD5mCkwhDqh8PpJx3v8Gh08gB2SUfbc2Enr1/sI9/WN7YJOyj4F92d6ijTux913O6Q==}
     engines: {node: '>=20'}
     peerDependencies:
       eslint: ^8.57.0
@@ -1836,8 +1832,6 @@ snapshots:
 
   '@babel/helper-string-parser@7.24.1': {}
 
-  '@babel/helper-validator-identifier@7.22.20': {}
-
   '@babel/helper-validator-identifier@7.24.5': {}
 
   '@babel/highlight@7.24.5':
@@ -2140,7 +2134,7 @@ snapshots:
 
   '@tauri-apps/api@2.0.0-beta.11': {}
 
-  '@tb-dev/eslint-config@3.4.2(eslint@8.57.0)(typescript@5.4.5)':
+  '@tb-dev/eslint-config@3.4.3(eslint@8.57.0)(typescript@5.4.5)':
     dependencies:
       '@typescript-eslint/eslint-plugin': 7.8.0(@typescript-eslint/parser@7.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
       '@typescript-eslint/parser': 7.8.0(eslint@8.57.0)(typescript@5.4.5)
@@ -2634,7 +2628,7 @@ snapshots:
 
   eslint-plugin-unicorn@52.0.0(eslint@8.57.0):
     dependencies:
-      '@babel/helper-validator-identifier': 7.22.20
+      '@babel/helper-validator-identifier': 7.24.5
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.57.0)
       '@eslint/eslintrc': 2.1.4
       ci-info: 4.0.0
