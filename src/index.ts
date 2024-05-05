@@ -150,6 +150,7 @@ function config(options: ConfigOptions = {}) {
       'shallowRef',
       'toRaw',
       'toRef',
+      'toRefs',
       'toValue',
       'triggerRef',
       'unref',
