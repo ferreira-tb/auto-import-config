@@ -66,11 +66,17 @@ function config(options: ConfigOptions = {}) {
       'navigateOnKeyPressed',
       'navigateOnKeyStroke',
       'navigateOnKeyUp',
+      'onAltKeyDown',
+      'onAltKeyStroke',
       'onContextMenu',
+      'onCtrlKeyDown',
+      'onCtrlKeyStroke',
+      'onCtrlShiftKeyDown',
+      'onCtrlShiftKeyStroke',
       'onKeyDown',
-      'onKeyPressed',
       'onKeyStroke',
-      'onKeyUp',
+      'onShiftKeyDown',
+      'onShiftKeyStroke',
       'preventContextMenu',
       'preventKeyDown',
       'preventKeyPressed',
@@ -257,13 +263,7 @@ function config(options: ConfigOptions = {}) {
     ];
 
     if (!manatsu) {
-      imports['@vueuse/core'].push(
-        'onKeyDown',
-        'onKeyPressed',
-        'onKeyStroke',
-        'onKeyUp',
-        'useElementSize'
-      );
+      imports['@vueuse/core'].push('onKeyDown', 'onKeyStroke', 'useElementSize');
     }
   }
 

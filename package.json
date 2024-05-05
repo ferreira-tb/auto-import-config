@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/auto-import-config",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "Config for unplugin-auto-import",
   "license": "MIT",
   "type": "module",
@@ -37,7 +37,7 @@
     "typescript": "^5.4.5",
     "unplugin-auto-import": "^0.17.5",
     "vite": "^5.2.11",
-    "vite-plugin-dts": "^3.9.0"
+    "vite-plugin-dts": "^3.9.1"
   },
   "peerDependencies": {
     "@tauri-apps/api": "^2.0.0-beta.11",
