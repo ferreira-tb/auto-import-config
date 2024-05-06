@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/auto-import-config",
-  "version": "1.6.4",
+  "version": "1.6.5",
   "description": "Config for unplugin-auto-import",
   "license": "MIT",
   "type": "module",
