@@ -52,7 +52,6 @@ function config(options: ConfigOptions = {}) {
 
   if (manatsu) {
     imports.manatsu = [
-      'defineEmptyComponent',
       'getCurrentApp',
       'getRouter',
       'handleError',

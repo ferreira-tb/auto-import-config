@@ -1,11 +1,11 @@
 {
   "name": "@tb-dev/auto-import-config",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "Config for unplugin-auto-import",
   "license": "MIT",
   "type": "module",
   "private": false,
-  "packageManager": "pnpm@9.0.6",
+  "packageManager": "pnpm@9.1.0",
   "homepage": "https://github.com/ferreira-tb/auto-import-config",
   "repository": {
     "type": "git",
@@ -27,8 +27,8 @@
     "type-check": "tsc --noEmit"
   },
   "devDependencies": {
-    "@tb-dev/eslint-config": "^3.4.3",
-    "@types/node": "^20.12.8",
+    "@tb-dev/eslint-config": "^3.5.0",
+    "@types/node": "^20.12.10",
     "eslint": "^8.57.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
