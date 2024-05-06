@@ -46,7 +46,7 @@
     "@vueuse/core": "^10.9.0",
     "@vueuse/math": "^10.9.0",
     "@vueuse/router": "^10.9.0",
-    "manatsu": "^0.9.8",
+    "manatsu": "^0.10.0",
     "pinia": "^2.1.7",
     "unplugin-auto-import": "^0.17.5",
     "vue": "^3.4.26",
