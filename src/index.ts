@@ -102,6 +102,7 @@ function config(options: ConfigOptions = {}) {
 
   if (utils) {
     imports['@tb-dev/utils'] = [
+      'flushPromises',
       'isNullish',
       'noop',
       'panic',
