@@ -54,6 +54,7 @@ function config(options: ConfigOptions = {}) {
     imports.manatsu = [
       'getCurrentApp',
       'handleError',
+      'handleErrorWithDialog',
       'injectStrict',
       'invokeOnKeyDown',
       'invokeOnKeyStroke',
