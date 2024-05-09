@@ -53,7 +53,6 @@ function config(options: ConfigOptions = {}) {
   if (manatsu) {
     imports.manatsu = [
       'getCurrentApp',
-      'getRouter',
       'handleError',
       'injectStrict',
       'invokeOnKeyDown',
