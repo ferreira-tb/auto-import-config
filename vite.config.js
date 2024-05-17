@@ -12,6 +12,9 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/index.ts'),
       formats: ['es', 'cjs'],
       fileName: 'index'
+    },
+    rollupOptions: {
+      external: [/^node:/, /^unplugin-auto-import/, 'vite', 'vue']
     }
   }
 });
