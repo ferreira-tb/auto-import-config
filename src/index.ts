@@ -206,6 +206,7 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
       'useAsyncState',
       'useBreakpoints',
       'useBrowserLocation',
+      'useColorMode',
       'useCycleList',
       'useCurrentElement',
       'useDraggable',
