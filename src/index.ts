@@ -321,6 +321,7 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
         'CSSProperties',
         'Component',
         'ComponentInstance',
+        'ComponentPublicInstance',
         'ComputedRef',
         'InjectionKey',
         'MaybeRefOrGetter',
