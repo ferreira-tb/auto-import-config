@@ -1,8 +1,9 @@
 {
   "conventionalCommits.promptScopes": false,
-  "prettier.requireConfig": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.tabSize": 2,
-  "eslint.experimental.useFlatConfig": true,
-  "eslint.enable": true
+  "eslint.enable": true,
+  "eslint.useFlatConfig": true,
+  "prettier.requireConfig": true,
+  "typescript.tsdk": "node_modules\\typescript\\lib"
 }
