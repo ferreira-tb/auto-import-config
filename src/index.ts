@@ -189,7 +189,6 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
       'refWithControl',
       'syncRef',
       'onClickOutside',
-      'templateRef',
       'tryOnBeforeMount',
       'tryOnBeforeUnmount',
       'tryOnMounted',
