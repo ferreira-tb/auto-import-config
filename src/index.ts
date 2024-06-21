@@ -78,9 +78,12 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
       'preventContextMenu',
       'preventKeyDown',
       'preventKeyStroke',
+      'templateRef',
       'useElementSize',
+      'useHeight',
       'useInvoke',
-      'useListen'
+      'useListen',
+      'useWidth'
     ];
   }
 
