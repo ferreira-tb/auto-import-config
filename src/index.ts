@@ -55,6 +55,7 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
 
   if (manatsu) {
     imports.manatsu = [
+      'componentRef',
       'getCurrentApp',
       'handleError',
       'handleErrorWithDialog',
