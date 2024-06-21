@@ -83,7 +83,9 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
       'useHeight',
       'useInvoke',
       'useListen',
-      'useWidth'
+      'useWidth',
+      'useWindowHeight',
+      'useWindowWidth'
     ];
   }
 
