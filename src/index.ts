@@ -55,7 +55,6 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
 
   if (manatsu) {
     imports.manatsu = [
-      'componentRef',
       'getCurrentApp',
       'handleError',
       'handleErrorWithDialog',
@@ -79,7 +78,6 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
       'preventContextMenu',
       'preventKeyDown',
       'preventKeyStroke',
-      'templateRef',
       'useElementSize',
       'useHeight',
       'useInvoke',
