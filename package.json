@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/auto-import-config",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "description": "Config for unplugin-auto-import",
   "license": "MIT",
   "type": "module",
@@ -52,6 +52,7 @@
     "@vueuse/router": "^10.11.0",
     "manatsu": "^0.11.6",
     "pinia": "^2.1.7",
+    "vue": "^3.4.30",
     "vue-router": "^4.4.0"
   },
   "engines": {
