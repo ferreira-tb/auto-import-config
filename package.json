@@ -32,8 +32,8 @@
     "vite": "^5.3.1"
   },
   "devDependencies": {
-    "@tb-dev/eslint-config": "^3.8.2",
-    "@types/node": "^20.14.7",
+    "@tb-dev/eslint-config": "^3.8.3",
+    "@types/node": "^20.14.8",
     "eslint": "^8.57.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
@@ -41,7 +41,7 @@
     "tslib": "^2.6.3",
     "typescript": "^5.5.2",
     "vite-plugin-dts": "^3.9.1",
-    "vue": "^3.4.29"
+    "vue": "^3.4.30"
   },
   "peerDependencies": {
     "@tauri-apps/api": "^2.0.0-beta.13",
@@ -50,7 +50,7 @@
     "@vueuse/core": "^10.11.0",
     "@vueuse/math": "^10.11.0",
     "@vueuse/router": "^10.11.0",
-    "manatsu": "^0.11.5",
+    "manatsu": "^0.11.6",
     "pinia": "^2.1.7",
     "vue-router": "^4.4.0"
   },
