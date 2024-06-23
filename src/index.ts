@@ -347,7 +347,7 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
   if (utilityTypes) {
     typeImports.push({
       from: '@tb-dev/utility-types',
-      imports: ['MaybeArray', 'MaybePromise', 'Nullish', 'PartialNullish'],
+      imports: ['Fn', 'MaybeArray', 'MaybePromise', 'Nullish', 'PartialNullish'],
       type: true
     });
   }
