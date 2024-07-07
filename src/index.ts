@@ -55,14 +55,13 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
 
   if (manatsu) {
     imports.manatsu = [
+      'computedAsync',
       'getCurrentApp',
       'handleError',
       'injectStrict',
       'invokeOnKeyDown',
       'invokeOnKeyStroke',
       'isDev',
-      'navigateOnKeyDown',
-      'navigateOnKeyStroke',
       'onAltKeyDown',
       'onAltKeyStroke',
       'onContextMenu',
@@ -177,7 +176,6 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
 
   if (vueuse) {
     imports['@vueuse/core'] = [
-      'computedAsync',
       'computedInject',
       'computedWithControl',
       'createEventHook',
@@ -308,7 +306,7 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
     ];
 
     if (!manatsu) {
-      imports['@vueuse/core'].push('onKeyDown', 'onKeyStroke', 'useElementSize');
+      imports['@vueuse/core'].push('computedAsync', 'onKeyDown', 'onKeyStroke', 'useElementSize');
     }
   }
 
