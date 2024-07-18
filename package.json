@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/auto-import-config",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Config for unplugin-auto-import",
   "license": "MIT",
   "type": "module",
@@ -29,29 +29,29 @@
   },
   "dependencies": {
     "unplugin-auto-import": "^0.18.0",
-    "vite": "^5.3.3"
+    "vite": "^5.3.4"
   },
   "devDependencies": {
-    "@tb-dev/eslint-config": "^3.8.8",
-    "@types/node": "^20.14.10",
+    "@tb-dev/eslint-config": "^3.8.10",
+    "@types/node": "^20.14.11",
     "eslint": "^8.57.0",
-    "husky": "^9.0.11",
+    "husky": "^9.1.1",
     "lint-staged": "^15.2.7",
-    "prettier": "^3.3.2",
+    "prettier": "^3.3.3",
     "tslib": "^2.6.3",
     "typescript": "^5.5.3",
     "vite-plugin-dts": "^3.9.1",
-    "vue": "^3.4.31"
+    "vue": "^3.4.32"
   },
   "peerDependencies": {
-    "@tauri-apps/api": "^2.0.0-beta.14",
-    "@tb-dev/utils": "^2.0.0",
+    "@tauri-apps/api": "^2.0.0-beta.15",
+    "@tb-dev/utils": "^2.0.1",
     "@vueuse/core": "^10.11.0",
     "@vueuse/math": "^10.11.0",
     "@vueuse/router": "^10.11.0",
-    "manatsu": "^0.13.0",
+    "manatsu": "^0.13.1",
     "pinia": "^2.1.7",
-    "vue": "^3.4.31",
+    "vue": "^3.4.32",
     "vue-router": "^4.4.0"
   },
   "engines": {
