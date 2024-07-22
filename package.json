@@ -1,11 +1,11 @@
 {
   "name": "@tb-dev/auto-import-config",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "description": "Config for unplugin-auto-import",
   "license": "MIT",
   "type": "module",
   "private": false,
-  "packageManager": "pnpm@9.5.0",
+  "packageManager": "pnpm@9.6.0",
   "homepage": "https://github.com/ferreira-tb/auto-import-config",
   "repository": {
     "type": "git",
@@ -32,7 +32,7 @@
     "vite": "^5.3.4"
   },
   "devDependencies": {
-    "@tb-dev/eslint-config": "^3.8.10",
+    "@tb-dev/eslint-config": "^4.0.0",
     "@types/node": "^20.14.11",
     "eslint": "^8.57.0",
     "husky": "^9.1.1",
@@ -41,7 +41,7 @@
     "tslib": "^2.6.3",
     "typescript": "^5.5.3",
     "vite-plugin-dts": "^3.9.1",
-    "vue": "^3.4.32"
+    "vue": "^3.4.33"
   },
   "peerDependencies": {
     "@tauri-apps/api": "^2.0.0-beta.15",
@@ -49,9 +49,9 @@
     "@vueuse/core": "^10.11.0",
     "@vueuse/math": "^10.11.0",
     "@vueuse/router": "^10.11.0",
-    "manatsu": "^0.13.1",
+    "manatsu": "^0.14.0",
     "pinia": "^2.1.7",
-    "vue": "^3.4.32",
+    "vue": "^3.4.33",
     "vue-router": "^4.4.0"
   },
   "engines": {
