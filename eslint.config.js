@@ -1,6 +1,6 @@
-import config from '@tb-dev/eslint-config';
+import { defineConfig } from '@tb-dev/eslint-config';
 
-export default config({
+export default defineConfig({
   project: ['./tsconfig.json'],
   overrides: {
     typescript: {
