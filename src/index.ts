@@ -70,8 +70,6 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
       'onShiftKeyDown',
       'useElementSize',
       'useHeight',
-      'useInvoke',
-      'useListen',
       'useWidth',
       'useWindowHeight',
       'useWindowWidth'
@@ -336,7 +334,7 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
   if (utils) {
     typeImports.push({
       from: '@tb-dev/utils',
-      imports: ['Fn', 'MaybeArray', 'MaybePromise', 'Nullish', 'PartialNullish'],
+      imports: ['Fn', 'MaybeArray', 'MaybePromise', 'Nullish', 'PartialNull', 'PartialNullish'],
       type: true
     });
   }
