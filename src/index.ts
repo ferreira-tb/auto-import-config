@@ -93,17 +93,7 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
   }
 
   if (utils) {
-    imports['@tb-dev/utils'] = [
-      'flushPromises',
-      'isNullish',
-      'noop',
-      'panic',
-      'toArray',
-      'todo',
-      'toPixel',
-      'unimplemented',
-      'unreachable'
-    ];
+    imports['@tb-dev/utils'] = ['flushPromises', 'panic', 'todo', 'unimplemented', 'unreachable'];
   }
 
   if (vue) {
