@@ -91,8 +91,13 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
     imports['@tauri-apps/api/core'] = ['convertFileSrc', 'invoke'];
     imports['@tauri-apps/api/event'] = ['listen'];
     imports['@tauri-apps/api/webview'] = ['getCurrentWebview'];
-    imports['@tauri-apps/api/webviewWindow'] = ['getCurrentWebviewWindow'];
     imports['@tauri-apps/api/window'] = ['getCurrentWindow'];
+
+    imports['@tauri-apps/api/webviewWindow'] = [
+      'getAllWebviewWindows',
+      'getCurrentWebviewWindow',
+      'WebviewWindow'
+    ];
   }
 
   if (utils) {
