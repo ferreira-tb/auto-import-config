@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/auto-import-config",
-  "version": "6.0.1",
+  "version": "6.1.0",
   "description": "Config for unplugin-auto-import",
   "license": "MIT",
   "type": "module",
@@ -32,8 +32,8 @@
     "vite": "^5.4.1"
   },
   "devDependencies": {
-    "@tb-dev/eslint-config": "^5.2.0",
-    "@types/node": "^22.3.0",
+    "@tb-dev/eslint-config": "^5.2.1",
+    "@types/node": "^22.4.1",
     "eslint": "^9.9.0",
     "husky": "^9.1.4",
     "lint-staged": "^15.2.9",
