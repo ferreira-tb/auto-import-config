@@ -139,6 +139,7 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
       'unref',
       'useAttrs',
       'useSlots',
+      'useTemplateRef',
       'watch',
       'watchEffect',
       'watchPostEffect',
