@@ -250,7 +250,6 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
       'useStorageAsync',
       'useStyleTag',
       'useSwipe',
-      'useTemplateRefsList',
       'useTextareaAutosize',
       'useThrottleFn',
       'useTimeout',
