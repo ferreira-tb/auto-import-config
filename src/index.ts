@@ -138,6 +138,7 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
       'triggerRef',
       'unref',
       'useAttrs',
+      'useId',
       'useSlots',
       'useTemplateRef',
       'watch',

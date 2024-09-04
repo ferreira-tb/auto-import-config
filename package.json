@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/auto-import-config",
-  "version": "6.2.1",
+  "version": "6.2.2",
   "description": "Config for unplugin-auto-import",
   "license": "MIT",
   "type": "module",
@@ -41,7 +41,7 @@
     "tslib": "^2.7.0",
     "typescript": "^5.5.4",
     "vite-plugin-dts": "^4.1.0",
-    "vue": "^3.5.0"
+    "vue": "^3.5.1"
   },
   "peerDependencies": {
     "@tauri-apps/api": "^2.0.0-rc.4",
@@ -51,7 +51,7 @@
     "@vueuse/router": "^11.0.3",
     "manatsu": "^1.4.0",
     "pinia": "^2.2.2",
-    "vue": "^3.5.0",
+    "vue": "^3.5.1",
     "vue-router": "^4.4.3"
   },
   "engines": {
