@@ -337,6 +337,7 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
         'ComponentInstance',
         'ComponentPublicInstance',
         'ComputedRef',
+        'HTMLAttributes',
         'InjectionKey',
         'MaybeRefOrGetter',
         'Ref',
