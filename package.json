@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/auto-import-config",
-  "version": "6.2.4",
+  "version": "6.2.5",
   "description": "Config for unplugin-auto-import",
   "license": "MIT",
   "type": "module",
@@ -13,9 +13,6 @@
   },
   "bugs": {
     "url": "https://github.com/ferreira-tb/auto-import-config/issues"
-  },
-  "lint-staged": {
-    "*.{?(c|m)@(j|t)s,css,vue,md,json}": "prettier --write"
   },
   "scripts": {
     "build": "vite build",
@@ -36,7 +33,6 @@
     "@types/node": "^22.5.5",
     "eslint": "^9.10.0",
     "husky": "^9.1.6",
-    "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
     "tslib": "^2.7.0",
     "typescript": "^5.6.2",
