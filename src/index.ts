@@ -12,8 +12,6 @@ export interface ConfigOptions {
   viteOptimizeDeps?: boolean;
 
   presets?: {
-    /** @default false */
-    manatsu?: boolean;
     /** @default true */
     pinia?: boolean;
     /** @default true */
@@ -41,7 +39,6 @@ interface TypeImport {
 
 export default function plugin(options: ConfigOptions = {}): Plugin {
   const {
-    manatsu = false,
     pinia = true,
     router = true,
     tauri = false,
@@ -53,25 +50,6 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
   } = options.presets ?? {};
 
   const imports: Record<string, string[]> = {};
-
-  if (manatsu) {
-    imports.manatsu = [
-      'computedAsync',
-      'getCurrentApp',
-      'handleError',
-      'onAltKeyDown',
-      'onCtrlKeyDown',
-      'onCtrlShiftKeyDown',
-      'onKeyDown',
-      'onKeyStroke',
-      'onShiftKeyDown',
-      'useElementSize',
-      'useHeight',
-      'useWidth',
-      'useWindowHeight',
-      'useWindowWidth'
-    ];
-  }
 
   if (pinia) {
     imports.pinia = ['getActivePinia', 'storeToRefs'];
@@ -273,10 +251,6 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
       'watchWithFilter',
       'whenever'
     ];
-
-    if (!manatsu) {
-      imports['@vueuse/core'].push('computedAsync', 'onKeyDown', 'onKeyStroke', 'useElementSize');
-    }
   }
 
   if (vueuseRouter) {
@@ -300,21 +274,6 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
   }
 
   const typeImports: TypeImport[] = [];
-
-  if (manatsu) {
-    typeImports.push({
-      from: 'manatsu',
-      imports: [
-        'ComputedSymbol',
-        'MaybeNullishRef',
-        'RefSymbol',
-        'ShallowRefSymbol',
-        'WritableRefSymbol',
-        'WritableShallowRefSymbol'
-      ],
-      type: true
-    });
-  }
 
   if (utils) {
     typeImports.push({
