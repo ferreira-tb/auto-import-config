@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/auto-import-config",
-  "version": "7.0.2",
+  "version": "8.0.0",
   "description": "Config for unplugin-auto-import",
   "license": "MIT",
   "type": "module",
@@ -41,7 +41,7 @@
   },
   "peerDependencies": {
     "@tauri-apps/api": "^2.0.1",
-    "@tb-dev/utils": "^3.3.2",
+    "@tb-dev/utils": "^4.0.0",
     "@vueuse/core": "^11.1.0",
     "@vueuse/math": "^11.1.0",
     "@vueuse/router": "^11.1.0",
