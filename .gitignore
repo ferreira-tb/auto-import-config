@@ -17,6 +17,7 @@ coverage
 .vite
 **/.vitepress/temp
 **/.vitepress/cache
+.eslintcache
 
 /cypress/videos/
 /cypress/screenshots/
