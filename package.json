@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/auto-import-config",
-  "version": "9.0.2",
+  "version": "9.0.3",
   "description": "Config for unplugin-auto-import",
   "license": "MIT",
   "type": "module",
@@ -29,13 +29,13 @@
     "vite": "^6.0.7"
   },
   "devDependencies": {
-    "@tb-dev/eslint-config": "^6.1.6",
-    "@types/node": "^22.10.5",
-    "eslint": "^9.17.0",
+    "@tb-dev/eslint-config": "^6.2.2",
+    "@types/node": "^22.10.6",
+    "eslint": "^9.18.0",
     "prettier": "^3.4.2",
     "tslib": "^2.8.1",
     "typescript": "^5.7.3",
-    "vite-plugin-dts": "^4.4.0",
+    "vite-plugin-dts": "^4.5.0",
     "vue": "^3.5.13"
   },
   "peerDependencies": {
