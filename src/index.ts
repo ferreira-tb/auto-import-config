@@ -282,10 +282,10 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
         'Fn',
         'MaybeArray',
         'MaybePromise',
-        'Nullish',
         'Option',
         'PartialNull',
-        'PartialNullish'
+        'PartialNullish',
+        'WritablePartial'
       ],
       type: true
     });
