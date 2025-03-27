@@ -1,19 +1,6 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-pnpm-debug.log*
-
 **/node_modules
-.DS_Store
 dist
-dist-ssr
-coverage
-*.local
 .temp
-.vite
-**/.vitepress/temp
-**/.vitepress/cache
 .eslintcache
 
 # Vite timestamps
@@ -24,11 +11,5 @@ coverage
 !.vscode/extensions.json
 !.vscode/settings.json
 !.vscode/tasks.json
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
 
 config.json

@@ -37,7 +37,7 @@ interface TypeImport {
   type: true;
 }
 
-export default function plugin(options: ConfigOptions = {}): Plugin {
+export default function plugin(options: ConfigOptions = {}): Plugin | Plugin[] {
   const {
     pinia = true,
     router = true,
