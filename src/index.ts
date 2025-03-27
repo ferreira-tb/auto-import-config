@@ -74,7 +74,16 @@ export default function plugin(options: ConfigOptions = {}): Plugin | Plugin[] {
   }
 
   if (utils) {
-    imports['@tb-dev/utils'] = ['flushPromises', 'panic', 'todo', 'unimplemented', 'unreachable'];
+    imports['@tb-dev/utils'] = [
+      'flushPromises',
+      'panic',
+      'todo',
+      'unimplemented',
+      'unreachable',
+      'unwrap',
+      'unwrapOr',
+      'unwrapOrElse'
+    ];
   }
 
   if (vue) {
@@ -237,7 +246,6 @@ export default function plugin(options: ConfigOptions = {}): Plugin | Plugin[] {
       'useWebSocket',
       'useWindowFocus',
       'useWindowScroll',
-      'useWindowSize',
       'watchArray',
       'watchAtMost',
       'watchDebounced',
