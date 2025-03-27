@@ -4,7 +4,7 @@ import autoImport from 'unplugin-auto-import/vite';
 export interface ConfigOptions {
   dts?: string;
   excludeImports?: (string | RegExp)[];
-  imports?: any[];
+  imports?: unknown[];
   include?: RegExp[];
   /** @default true */
   injectAtEnd?: boolean;
