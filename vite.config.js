@@ -5,6 +5,7 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   plugins: [dts({ rollupTypes: false })],
   build: {
+    target: 'esnext',
     outDir: 'dist',
     emptyOutDir: true,
     minify: false,
