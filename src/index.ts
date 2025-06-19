@@ -46,7 +46,7 @@ export default function plugin(options: ConfigOptions = {}): Plugin | Plugin[] {
     vue = true,
     vueuse = true,
     vueuseMath = false,
-    vueuseRouter = false
+    vueuseRouter = false,
   } = options.presets ?? {};
 
   const imports: Record<string, string[]> = {};
@@ -61,7 +61,7 @@ export default function plugin(options: ConfigOptions = {}): Plugin | Plugin[] {
       'onBeforeRouteLeave',
       'onBeforeRouteUpdate',
       'useRoute',
-      'useRouter'
+      'useRouter',
     ];
   }
 
@@ -82,7 +82,7 @@ export default function plugin(options: ConfigOptions = {}): Plugin | Plugin[] {
       'unreachable',
       'unwrap',
       'unwrapOr',
-      'unwrapOrElse'
+      'unwrapOrElse',
     ];
   }
 
@@ -131,7 +131,7 @@ export default function plugin(options: ConfigOptions = {}): Plugin | Plugin[] {
       'watch',
       'watchEffect',
       'watchPostEffect',
-      'watchSyncEffect'
+      'watchSyncEffect',
     ];
   }
 
@@ -257,7 +257,7 @@ export default function plugin(options: ConfigOptions = {}): Plugin | Plugin[] {
       'watchThrottled',
       'watchTriggerable',
       'watchWithFilter',
-      'whenever'
+      'whenever',
     ];
   }
 
@@ -277,7 +277,7 @@ export default function plugin(options: ConfigOptions = {}): Plugin | Plugin[] {
       'useMax',
       'useMin',
       'useRound',
-      'useTrunc'
+      'useTrunc',
     ];
   }
 
@@ -293,9 +293,9 @@ export default function plugin(options: ConfigOptions = {}): Plugin | Plugin[] {
         'Option',
         'PartialNull',
         'PartialNullish',
-        'WritablePartial'
+        'WritablePartial',
       ],
-      type: true
+      type: true,
     });
   }
 
@@ -313,9 +313,9 @@ export default function plugin(options: ConfigOptions = {}): Plugin | Plugin[] {
         'MaybeRefOrGetter',
         'Ref',
         'ShallowRef',
-        'VNode'
+        'VNode',
       ],
-      type: true
+      type: true,
     });
   }
 
@@ -327,8 +327,8 @@ export default function plugin(options: ConfigOptions = {}): Plugin | Plugin[] {
     imports: [
       filterImports(imports, options.excludeImports ?? []),
       ...typeImports,
-      ...(options.imports ?? [])
-    ]
+      ...(options.imports ?? []),
+    ],
   });
 }
 

@@ -12,10 +12,10 @@ export default defineConfig({
     lib: {
       entry: join(import.meta.dirname, 'src/index.ts'),
       formats: ['es'],
-      fileName: 'index'
+      fileName: 'index',
     },
     rollupOptions: {
-      external: [/^node:/, /^unplugin-auto-import/, 'vite', 'vue']
-    }
-  }
+      external: [/^node:/, /^unplugin-auto-import/, 'vite', 'vue'],
+    },
+  },
 });

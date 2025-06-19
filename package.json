@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/auto-import-config",
-  "version": "9.2.5",
+  "version": "9.2.6",
   "description": "Config for unplugin-auto-import",
   "license": "MIT",
   "type": "module",
@@ -29,23 +29,23 @@
     "vite": "^6.3.5"
   },
   "devDependencies": {
-    "@tb-dev/eslint-config": "^7.1.7",
-    "@types/node": "^24.0.1",
-    "eslint": "^9.28.0",
+    "@tb-dev/eslint-config": "^7.1.8",
+    "@types/node": "^24.0.3",
+    "eslint": "^9.29.0",
     "prettier": "^3.5.3",
     "tslib": "^2.8.1",
     "typescript": "^5.8.3",
     "vite-plugin-dts": "^4.5.4",
-    "vue": "^3.5.16"
+    "vue": "^3.5.17"
   },
   "peerDependencies": {
     "@tauri-apps/api": "^2.5.0",
-    "@tb-dev/utils": "^7.0.1",
-    "@vueuse/core": "^13.2.0",
-    "@vueuse/math": "^13.2.0",
-    "@vueuse/router": "^13.2.0",
-    "pinia": "^3.0.2",
-    "vue": "^3.5.14",
+    "@tb-dev/utils": "^7.0.4",
+    "@vueuse/core": "^13.4.0",
+    "@vueuse/math": "^13.4.0",
+    "@vueuse/router": "^13.4.0",
+    "pinia": "^3.0.3",
+    "vue": "^3.5.17",
     "vue-router": "^4.5.1"
   },
   "engines": {
