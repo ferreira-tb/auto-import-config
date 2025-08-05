@@ -1,11 +1,11 @@
 {
   "name": "@tb-dev/auto-import-config",
-  "version": "9.2.8",
+  "version": "9.2.9",
   "description": "Config for unplugin-auto-import",
   "license": "MIT",
   "type": "module",
   "private": false,
-  "packageManager": "pnpm@10.13.1",
+  "packageManager": "pnpm@10.14.0",
   "funding": "https://github.com/sponsors/ferreira-tb",
   "homepage": "https://github.com/ferreira-tb/auto-import-config",
   "repository": {
@@ -25,27 +25,27 @@
     "update": "miho update major -t"
   },
   "dependencies": {
-    "unplugin-auto-import": "^19.3.0",
-    "vite": "^7.0.5"
+    "unplugin-auto-import": "^20.0.0",
+    "vite": "^7.0.6"
   },
   "devDependencies": {
-    "@tb-dev/eslint-config": "^8.0.1",
-    "@types/node": "^24.0.15",
-    "eslint": "^9.31.0",
+    "@tb-dev/eslint-config": "^8.0.4",
+    "@types/node": "^24.2.0",
+    "eslint": "^9.32.0",
     "prettier": "^3.6.2",
     "tslib": "^2.8.1",
-    "typescript": "^5.8.3",
+    "typescript": "^5.9.2",
     "vite-plugin-dts": "^4.5.4",
-    "vue": "^3.5.17"
+    "vue": "^3.5.18"
   },
   "peerDependencies": {
-    "@tauri-apps/api": "^2.6.0",
-    "@tb-dev/utils": "^7.0.7",
-    "@vueuse/core": "^13.5.0",
-    "@vueuse/math": "^13.5.0",
-    "@vueuse/router": "^13.5.0",
+    "@tauri-apps/api": "^2.7.0",
+    "@tb-dev/utils": "^7.0.10",
+    "@vueuse/core": "^13.6.0",
+    "@vueuse/math": "^13.6.0",
+    "@vueuse/router": "^13.6.0",
     "pinia": "^3.0.3",
-    "vue": "^3.5.17",
+    "vue": "^3.5.18",
     "vue-router": "^4.5.1"
   },
   "engines": {
