@@ -334,7 +334,7 @@ export default function plugin(options: ConfigOptions = {}): Plugin | Plugin[] {
 
 function filterImports(
   imports: Record<string, string[]>,
-  exclude: (string | RegExp)[]
+  exclude: (string | RegExp)[],
 ): Record<string, string[]> {
   const predicate = (value: string): boolean => {
     return !exclude.some((pattern) => {
@@ -344,6 +344,6 @@ function filterImports(
   };
 
   return Object.fromEntries(
-    Object.entries(imports).map(([key, values]) => [key, values.filter(predicate)])
+    Object.entries(imports).map(([key, values]) => [key, values.filter(predicate)]),
   );
 }
