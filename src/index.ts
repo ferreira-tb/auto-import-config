@@ -326,7 +326,9 @@ export default function plugin(options: ConfigOptions = {}): Plugin | Plugin[] {
     include: [/\.[cm]?[jt]s$/, /\.vue$/, ...(options.include ?? [])],
     imports: [
       filterImports(imports, options.excludeImports ?? []),
+      // @ts-expect-error unknown
       ...typeImports,
+      // @ts-expect-error unknown
       ...(options.imports ?? []),
     ],
   });
