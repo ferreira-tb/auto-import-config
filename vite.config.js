@@ -5,7 +5,6 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   plugins: [dts({ rollupTypes: false })],
   build: {
-    target: 'esnext',
     outDir: 'dist',
     emptyOutDir: true,
     minify: false,
@@ -14,7 +13,7 @@ export default defineConfig({
       formats: ['es'],
       fileName: 'index',
     },
-    rollupOptions: {
+    rolldownOptions: {
       external: [/^node:/, /^unplugin-auto-import/, 'vite', 'vue'],
     },
   },
